@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+    margin: 0 auto;
+    transition: all .7s;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+    padding-top: 71px;
+    margin-bottom: 2rem;
+}
+
+
+
+.text-content h1 {
+    font-size: 36px;
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.text-content div h2 {
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.text-content div p {
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    font-size: 14px;
+    max-width: 333px;
+    padding-bottom: 2rem;
+}
+
+.card_box {
+    display: grid;
+    grid-template-columns: 155px 155px;
+    grid-template-rows: repeat(3, 280px);
+    margin-inline: 12px;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+}
+
+
+.cards img {
+    width: 139px;
+    height: auto;
+}
+
+.cards h1 {
+    font-family: 'Poppins', serif;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 0.5rem;
+}
+
+.image_div {
+    position: relative;
+    width: 100%;
+    padding-right: 1rem;
+}
+
+.h2_ {
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: rotate(90deg);
+}
+
+.h2_ h2 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+
+.p1 {
+    top: 2.2rem;
+    right: -2.2rem;
+}
+
+.p2{
+    top:1.8rem;
+    right: -1.8rem;
+}
+
+.p3{
+    top:1.3rem;
+    right: -1.2rem;
+}
+
+.p4{
+    top: 1.5rem;
+    right: -1.8rem;
+}
+
+.p5{
+    top: 1.4rem;
+    right: -1.2rem
+}
+
+.p6{
+    top: 1.4rem;
+    right: -1.2rem;
+}
+
+#person_2 , #person_4 , #person_6{
+    align-self: end;
+}
+
+
+
+
+@media screen and (min-width:767px){
+    .text-content{
+        flex-direction: row;
+    }
+
+    body{
+        max-width: 710px;
+    }
+
+    .text-content h1{
+        width: 60%;
+    }
+
+    .card_box{
+        grid-template-columns: repeat(3, 200px);
+        grid-template-rows: repeat(2, 450px);
+    }
+
+    .cards{
+        justify-self: center;
+    }
+
+    .cards img{
+        width: 175px;
+    }
+
+    #person_2 , #person_4 , #person_6{
+        align-self: start;
+    }
+
+    #person_2 , #person_5{
+        align-self: end;
+    }
+
+
+}
+
+@media screen and (min-width:1024px){
+    .card_box{
+        grid-template-columns: repeat(3, 230px);
+        grid-template-rows: repeat(2, 533px);
+    }
+
+    .cards{
+        justify-self: center;
+        align-self: flex-start;
+    }
+
+    .cards img{
+        width: 200px;
+    }
+}
